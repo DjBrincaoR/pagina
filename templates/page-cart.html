@@ -1,0 +1,83 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:woocommerce/page-content-wrapper {"page":"cart"} -->
+	<!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+	<main class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50)">
+		<!-- wp:pattern {"slug":"assembler/hidden-cart-page-title"} /-->
+
+		<!-- wp:woocommerce/cart {"lock":{"remove":true,"move":true}} -->
+		<div class="wp-block-woocommerce-cart alignwide is-loading">
+			<!-- wp:woocommerce/filled-cart-block -->
+			<div class="wp-block-woocommerce-filled-cart-block">
+				<!-- wp:woocommerce/cart-items-block -->
+				<div class="wp-block-woocommerce-cart-items-block">
+					<!-- wp:woocommerce/cart-line-items-block -->
+					<div class="wp-block-woocommerce-cart-line-items-block"></div>
+					<!-- /wp:woocommerce/cart-line-items-block -->
+				</div>
+				<!-- /wp:woocommerce/cart-items-block -->
+
+				<!-- wp:woocommerce/cart-totals-block -->
+				<div class="wp-block-woocommerce-cart-totals-block">
+					<!-- wp:woocommerce/cart-order-summary-block -->
+					<div class="wp-block-woocommerce-cart-order-summary-block">
+						<!-- wp:woocommerce/cart-order-summary-heading-block -->
+						<div class="wp-block-woocommerce-cart-order-summary-heading-block"></div>
+						<!-- /wp:woocommerce/cart-order-summary-heading-block -->
+
+						<!-- wp:woocommerce/cart-order-summary-coupon-form-block -->
+						<div class="wp-block-woocommerce-cart-order-summary-coupon-form-block"></div>
+						<!-- /wp:woocommerce/cart-order-summary-coupon-form-block -->
+
+						<!-- wp:woocommerce/cart-order-summary-totals-block -->
+						<div class="wp-block-woocommerce-cart-order-summary-totals-block">
+							<!-- wp:woocommerce/cart-order-summary-subtotal-block -->
+								<div class="wp-block-woocommerce-cart-order-summary-subtotal-block"></div>
+							<!-- /wp:woocommerce/cart-order-summary-subtotal-block -->
+
+							<!-- wp:woocommerce/cart-order-summary-fee-block -->
+								<div class="wp-block-woocommerce-cart-order-summary-fee-block"></div>
+							<!-- /wp:woocommerce/cart-order-summary-fee-block -->
+
+							<!-- wp:woocommerce/cart-order-summary-discount-block -->
+								<div class="wp-block-woocommerce-cart-order-summary-discount-block"></div>
+							<!-- /wp:woocommerce/cart-order-summary-discount-block -->
+
+							<!-- wp:woocommerce/cart-order-summary-shipping-block -->
+								<div class="wp-block-woocommerce-cart-order-summary-shipping-block"></div>
+							<!-- /wp:woocommerce/cart-order-summary-shipping-block -->
+
+							<!-- wp:woocommerce/cart-order-summary-taxes-block -->
+								<div class="wp-block-woocommerce-cart-order-summary-taxes-block"></div>
+							<!-- /wp:woocommerce/cart-order-summary-taxes-block -->
+						</div>
+						<!-- /wp:woocommerce/cart-order-summary-totals-block -->
+					</div>
+					<!-- /wp:woocommerce/cart-order-summary-block -->
+
+					<!-- wp:woocommerce/cart-express-payment-block -->
+					<div class="wp-block-woocommerce-cart-express-payment-block"></div>
+					<!-- /wp:woocommerce/cart-express-payment-block -->
+
+					<!-- wp:woocommerce/proceed-to-checkout-block -->
+					<div class="wp-block-woocommerce-proceed-to-checkout-block"></div>
+					<!-- /wp:woocommerce/proceed-to-checkout-block -->
+
+					<!-- wp:woocommerce/cart-accepted-payment-methods-block -->
+					<div class="wp-block-woocommerce-cart-accepted-payment-methods-block"></div>
+					<!-- /wp:woocommerce/cart-accepted-payment-methods-block -->
+				</div>
+				<!-- /wp:woocommerce/cart-totals-block -->
+			</div>
+			<!-- /wp:woocommerce/filled-cart-block -->
+
+			<!-- wp:pattern {"slug":"assembler/hidden-empty-cart-block"} /-->
+		</div>
+		<!-- /wp:woocommerce/cart -->
+
+		<!-- wp:pattern {"slug":"assembler/hidden-cross-sells-four-columns"} /-->
+	</main>
+	<!-- /wp:group -->
+<!-- /wp:woocommerce/page-content-wrapper -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer"} /-->
